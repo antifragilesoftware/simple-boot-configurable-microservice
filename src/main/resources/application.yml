@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        preferIpAddress: true
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+logging:
+  level:
+    org.springframework.cloud.consul: TRACE
+    org.springframework.boot.env.PropertySourcesLoader: DEBUG
+

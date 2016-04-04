@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configuredmicroservice1
+  profiles:
+    active: dev
+  cloud:
+    config:
+      discovery:
+        enabled: true
+
+
