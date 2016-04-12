@@ -5,9 +5,10 @@ spring:
     active: dev
   cloud:
     config:
+      enabled: true
       discovery:
         enabled: true
-        service-id: configurationserver
+        service-id: configserver
     consul:
       discovery:
         preferIpAddress: true

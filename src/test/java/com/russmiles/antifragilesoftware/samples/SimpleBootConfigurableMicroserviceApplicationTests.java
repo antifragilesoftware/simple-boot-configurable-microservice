@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = SimpleBootConfigurableMicroserviceApplication.class)
 @WebAppConfiguration
-@IntegrationTest({"server.port=0", "spring.cloud.bus.enabled=false", "spring.cloud.discovery.enabled=false", "spring.cloud.consul.enabled=false"})
+@IntegrationTest({"server.port=0", "spring.cloud.bus.enabled=false", "spring.cloud.discovery.enabled=false", "spring.cloud.consul.enabled=false", "spring.cloud.config.discovery.enabled=false"})
 public class SimpleBootConfigurableMicroserviceApplicationTests {
 
     private MockMvc mockMvc;
